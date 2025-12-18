@@ -259,3 +259,100 @@ h2 {
   .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 54px; }
 }
+/* HERO GRAPHIC (pure CSS, lightweight) */
+.hero-graphic {
+  width: 170px;
+  height: 90px;
+  margin: 0 auto 18px;
+  position: relative;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.35));
+  animation: floaty 3.2s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.truck {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  width: 110px;
+  height: 46px;
+  animation: truck-nudge 2.6s ease-in-out infinite;
+}
+
+@keyframes truck-nudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+.truck .cab {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 36px;
+  height: 24px;
+  border-radius: 10px 6px 8px 10px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.truck .bed {
+  position: absolute;
+  left: 34px;
+  bottom: 10px;
+  width: 74px;
+  height: 22px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.truck .wheel {
+  position: absolute;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.18);
+}
+
+.truck .wheel::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: rgba(34,197,94,0.25); /* matches your green accent */
+}
+
+.truck .wheel.w1 { left: 18px; }
+.truck .wheel.w2 { left: 78px; }
+
+.box {
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(34,197,94,0.18);
+  border: 1px solid rgba(34,197,94,0.35);
+  animation: box-bounce 2.2s ease-in-out infinite;
+}
+
+.box.b2 {
+  right: 42px;
+  bottom: 14px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+  animation-delay: 0.25s;
+}
+
+@keyframes box-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(-2deg); }
+}
