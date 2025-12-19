@@ -127,13 +127,18 @@
     <div class="container">
       <h2>Request a Free Quote</h2>
 
-      <form class="quote-form" action="mailto:onewaysservices@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Your Name" required />
-        <input type="email" name="Email" placeholder="Your Email" required />
-        <input type="tel" name="Phone" placeholder="Phone Number" required />
-        <textarea name="Details" rows="4" placeholder="Describe the junk you need removed"></textarea>
-        <button type="submit" class="btn primary">Send Request</button>
-      </form>
+     <form class="quote-form" action="https://formsubmit.co/onewaysservices@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New Junk Removal Quote Request">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <textarea name="details" rows="4" placeholder="Describe the junk you need removed"></textarea>
+
+  <button type="submit" class="btn primary">Send Request</button>
+</form>
 
       <p class="form-note">
         Prefer texting photos? Call us and we’ll quote fast.
