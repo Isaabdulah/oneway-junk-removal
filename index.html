@@ -159,12 +159,34 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <p>© 2025 Oneway Junk Removal. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- HAMBURGER MENU SCRIPT -->
+  <script>
+    (function () {
+      const btn = document.getElementById("hamburger");
+      const menu = document.getElementById("mobileMenu");
+
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      menu.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          menu.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
