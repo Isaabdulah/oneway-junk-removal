@@ -255,7 +255,6 @@ h2 {
 }
 
 @media (max-width: 640px) {
-  nav a { display: none; } /* keeps it clean for now, we can add hamburger later */
   .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 54px; }
 }
