@@ -7,7 +7,7 @@
   <title>Get a Free Quote | Oneway Junk Removal</title>
   <meta name="description" content="Request a free junk removal quote from Oneway Junk Removal. Fast replies. Serving Bradford, York Region, and the GTA." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://onewayjunkremoval.com/quote" />
+  <link rel="canonical" href="https://onewayjunkremoval.com/quote.html" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,7 +18,7 @@
     <div class="container nav">
       <div class="logo"><a href="index.html">Oneway Junk Removal</a></div>
       <nav>
-        <a href="index.html#services">Services</a>
+        <a href="services.html">Services</a>
         <a href="index.html#pricing">Pricing</a>
         <a href="index.html#coverage">Coverage</a>
         <a href="quote.html" class="btn">Get a Quote</a>
@@ -42,6 +42,10 @@
 
       <h1>Request a Free Quote</h1>
       <p>Tell us what you need removed and we’ll get back to you fast.</p>
+      <p style="margin-top:14px; color: var(--muted); font-size: 0.95rem;">
+  📞 <a href="tel:4163021234">416-302-1234</a> &nbsp; | &nbsp;
+  📧 <a href="mailto:onewaysservices@gmail.com">onewaysservices@gmail.com</a>
+</p>
     </div>
   </section>
 
@@ -50,24 +54,28 @@
     <div class="container">
       <h2>Quote Details</h2>
 
-      <!-- NOTE: mailto works but is not ideal; we can switch to FormSubmit next -->
-      <form class="quote-form" action="mailto:onewaysservices@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Your Name" required />
-        <input type="tel" name="Phone" placeholder="Phone Number" required />
-        <input type="email" name="Email" placeholder="Your Email" required />
+     <form class="quote-form" action="https://formsubmit.co/onewaysservices@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New Junk Removal Quote Request (Quote Page)">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://onewayjunkremoval.com/thanks.html">
 
-        <input type="text" name="City" placeholder="City (e.g., Bradford, Newmarket)" />
-        <input type="text" name="Pickup Location" placeholder="Pickup Location (House / Condo / Office)" />
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <input type="email" name="email" placeholder="Your Email" required />
 
-        <textarea name="Items" rows="5" placeholder="List the items (e.g., couch, mattress, bags, appliances, etc.)"></textarea>
+  <input type="text" name="city" placeholder="City (e.g., Bradford, Newmarket)" />
+  <input type="text" name="pickup_location" placeholder="Pickup Location (House / Condo / Office)" />
 
-        <label style="color: var(--muted); font-size: 0.95rem; line-height: 1.5;">
-          <input type="checkbox" name="Stairs" value="Yes" />
-          There are stairs / difficult access
-        </label>
+  <textarea name="items" rows="5" placeholder="List the items (e.g., couch, mattress, bags, appliances, etc.)"></textarea>
 
-        <button type="submit" class="btn primary">Send Quote Request</button>
-      </form>
+  <label style="color: var(--muted); font-size: 0.95rem; line-height: 1.5;">
+    <input type="checkbox" name="stairs_or_difficult_access" value="Yes" />
+    There are stairs / difficult access
+  </label>
+
+  <button type="submit" class="btn primary">Send Quote Request</button>
+</form>
 
       <p class="form-note">
         Faster quotes: text photos and we’ll estimate quickly.
