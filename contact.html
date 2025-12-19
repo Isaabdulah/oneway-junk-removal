@@ -40,15 +40,29 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container nav">
-      <div class="logo"><a href="index.html">Oneway Junk Removal</a></div>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="quote.html">Quote</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="container nav">
+    <div class="logo"><a href="index.html">Oneway Junk Removal</a></div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="services.html">Services</a>
+      <a href="quote.html">Quote</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="btn">Get a Quote</a>
+    </nav>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="services.html">Services</a>
+    <a href="quote.html">Quote</a>
+    <a href="contact.html">Contact</a>
+    <a href="quote.html" class="btn primary" style="width:100%;">Get a Quote</a>
+  </div>
+</header>
 
   <!-- HERO -->
   <section class="hero">
@@ -137,12 +151,23 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Oneway Junk Removal. All Rights Reserved.</p>
-    </div>
-  </footer>
+<script>
+  (function () {
+    const btn = document.getElementById("hamburger");
+    const menu = document.getElementById("mobileMenu");
 
-</body>
-</html>
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", () => {
+      const isOpen = menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    menu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        menu.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    });
+  })();
+</script>
