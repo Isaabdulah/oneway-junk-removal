@@ -357,7 +357,7 @@ h2 {
 }
 /* HAMBURGER + MOBILE MENU */
 .hamburger {
-  display: inline-flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
@@ -404,9 +404,14 @@ h2 {
 
 @media (max-width: 640px) {
   .nav-links { display: none; }
-  .hamburger { display: inline-flex; align-items: center; justify-content: center; }
-}
 
+  .hamburger {
+    display: inline-flex;
+    margin-left: auto;   /* ✅ push to far right */
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .logo-mark {
   display: inline-flex;
