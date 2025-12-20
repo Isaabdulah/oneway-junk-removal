@@ -445,15 +445,27 @@ h2 {
   margin-left: 4px;
 }
 
-/* Mobile tweak for logo ONLY */
+/* Mobile logo sizing fix */
 @media (max-width: 640px) {
   .logo-mark {
     flex-direction: column;
     align-items: flex-start;
-    gap: 2px;
+    gap: 1px;
+    line-height: 1.1;
+  }
+
+  .logo-one,
+  .logo-way {
+    font-size: 0.95rem;   /* smaller main text */
+  }
+
+  .logo-arrow {
+    font-size: 1rem;
   }
 
   .logo-sub {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    margin-left: 0;
   }
 }
