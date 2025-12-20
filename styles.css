@@ -169,6 +169,11 @@ h2 {
   margin-top: 18px;
 }
 
+/* Contact page grid (2 columns on desktop) */
+.contact-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   background: rgba(15, 23, 42, 0.55);
   border: 1px solid var(--border);
@@ -257,6 +262,20 @@ h2 {
 @media (max-width: 640px) {
   .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 54px; }
+
+  /* Contact page: force single column */
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Prevent iPhone zoom + improve form spacing */
+  .quote-form input,
+  .quote-form textarea {
+    font-size: 16px;
+  }
+
+  /* Full-width form button on mobile */
+  .quote-form .btn {
+    width: 100%;
+  }
 }
 /* HERO GRAPHIC (pure CSS, lightweight) */
 .hero-graphic {
