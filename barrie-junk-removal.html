@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barrie Junk Removal | Oneway Junk Removal</title>
+  <meta name="description" content="Oneway Junk Removal provides fast, affordable junk removal in Barrie, Ontario. Furniture removal, appliance pickup, property cleanouts, yard waste removal, and more." />
+  <meta name="keywords" content="Barrie junk removal, junk removal Barrie, furniture removal Barrie, appliance removal Barrie, cleanout services Barrie" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.onewayjunkremoval.com/barrie-junk-removal.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <a href="index.html" class="logo-mark">
+        <span class="logo-main"><span class="logo-one">ONE</span><span class="logo-way">WAY</span><span class="logo-arrow">→</span></span>
+        <span class="logo-sub">JUNK REMOVAL</span>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="services.html">Services</a>
+      <a href="quote.html">Quote</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="btn">Get a Quote</a>
+    </nav>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="services.html">Services</a>
+    <a href="quote.html">Quote</a>
+    <a href="coverage.html">Coverage</a>
+    <a href="contact.html">Contact</a>
+    <a href="quote.html" class="btn primary" style="width:100%;">Get a Quote</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="truck"><span class="cab"></span><span class="bed"></span><span class="wheel w1"></span><span class="wheel w2"></span></div>
+      <div class="box"></div><div class="box b2"></div>
+    </div>
+    <h1>Barrie Junk Removal</h1>
+    <p>Fast, affordable junk removal in Barrie for furniture, appliances, cleanouts, yard waste, and more.</p>
+    <div class="hero-buttons">
+      <a href="tel:2499892684" class="btn primary">Call 249-989-2684</a>
+      <a href="quote.html" class="btn secondary">Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Dependable Junk Removal in Barrie</h2>
+    <p class="center">
+      We provide junk removal services across Barrie for homeowners, landlords, tenants, and small businesses. Whether it is a single-item pickup or a larger cleanout, we help you clear unwanted junk without overcomplicating it.
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>What We Remove in Barrie</h2>
+    <div class="grid">
+      <div class="card"><h3>Furniture Removal</h3><p>Couches, bed frames, mattresses, tables, dressers, and more.</p></div>
+      <div class="card"><h3>Appliance Removal</h3><p>Kitchen and laundry appliances removed quickly and safely.</p></div>
+      <div class="card"><h3>Property Cleanouts</h3><p>Garage, basement, rental unit, and general clutter cleanouts.</p></div>
+      <div class="card"><h3>Yard Waste Removal</h3><p>Outdoor debris, branches, scrap wood, and bagged waste pickup.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <h2>Need Junk Removal in Barrie?</h2>
+    <p class="center">Reach out for a no-obligation quote and fast local service.</p>
+    <div style="text-align:center; margin-top:18px;">
+      <a href="tel:2499892684" class="btn primary">Call 249-989-2684</a>
+      <a href="quote.html" class="btn secondary">Request a Quote</a>
+      <a href="coverage.html" class="btn secondary">Back to Coverage</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>© 2025 Oneway Junk Removal. All Rights Reserved.</p></div></footer>
+
+<script>
+(function () {
+  const btn = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
+  if (!btn || !menu) return;
+  btn.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
