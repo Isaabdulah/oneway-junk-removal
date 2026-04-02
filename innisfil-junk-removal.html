@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innisfil Junk Removal | Oneway Junk Removal</title>
+  <meta name="description" content="Oneway Junk Removal provides fast, affordable junk removal in Innisfil, Ontario. Furniture removal, appliance pickup, cleanouts, yard waste removal, and more." />
+  <meta name="keywords" content="Innisfil junk removal, junk removal Innisfil, furniture removal Innisfil, appliance removal Innisfil, yard waste removal Innisfil" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.onewayjunkremoval.com/innisfil-junk-removal.html" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <a href="index.html" class="logo-mark">
+        <span class="logo-main"><span class="logo-one">ONE</span><span class="logo-way">WAY</span><span class="logo-arrow">→</span></span>
+        <span class="logo-sub">JUNK REMOVAL</span>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="services.html">Services</a>
+      <a href="quote.html">Quote</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="btn">Get a Quote</a>
+    </nav>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="services.html">Services</a>
+    <a href="quote.html">Quote</a>
+    <a href="coverage.html">Coverage</a>
+    <a href="contact.html">Contact</a>
+    <a href="quote.html" class="btn primary" style="width:100%;">Get a Quote</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="truck"><span class="cab"></span><span class="bed"></span><span class="wheel w1"></span><span class="wheel w2"></span></div>
+      <div class="box"></div><div class="box b2"></div>
+    </div>
+    <h1>Innisfil Junk Removal</h1>
+    <p>Fast, affordable junk removal in Innisfil for furniture, appliances, cleanouts, yard waste, and more.</p>
+    <div class="hero-buttons">
+      <a href="tel:2499892684" class="btn primary">Call 249-989-2684</a>
+      <a href="quote.html" class="btn secondary">Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Reliable Junk Removal in Innisfil</h2>
+    <p class="center">
+      We provide junk removal services throughout Innisfil for homes, rental properties, and small businesses. From bulky furniture to cluttered storage areas, we help remove unwanted items quickly and clearly.
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>Our Innisfil Services</h2>
+    <div class="grid">
+      <div class="card"><h3>Furniture Removal</h3><p>Old furniture, couches, mattresses, and general household junk.</p></div>
+      <div class="card"><h3>Appliance Removal</h3><p>Fridges, washers, dryers, stoves, and other unwanted appliances.</p></div>
+      <div class="card"><h3>Garage & Basement Cleanouts</h3><p>Storage areas, garages, basements, and clutter removal.</p></div>
+      <div class="card"><h3>Yard Waste Removal</h3><p>Brush, branches, bagged yard waste, and light debris pickup.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <h2>Need Junk Removal in Innisfil?</h2>
+    <p class="center">Call us for a quick quote and dependable service.</p>
+    <div style="text-align:center; margin-top:18px;">
+      <a href="tel:2499892684" class="btn primary">Call 249-989-2684</a>
+      <a href="quote.html" class="btn secondary">Request a Quote</a>
+      <a href="coverage.html" class="btn secondary">Back to Coverage</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>© 2025 Oneway Junk Removal. All Rights Reserved.</p></div></footer>
+
+<script>
+(function () {
+  const btn = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
+  if (!btn || !menu) return;
+  btn.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
